@@ -1,0 +1,5 @@
+= Etcdbeat Docs
+
+Welcome to the Etcdbeat documentation.
+
+

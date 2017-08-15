@@ -1,0 +1,31 @@
+################### Etcdbeat Configuration Example #########################
+
+############################# Etcdbeat ######################################
+
+input:
+  # Defines how often an event is sent to the output
+  period: 30
+  
+  # Defines the http port serviced
+  # Default to :2379
+  port: :2379  
+
+  # Defines the http host serviced
+  # Default to localhost
+  host: localhost      
+
+
+  # Statistics to collect
+  statistics:
+    leader: false 
+    self: true        
+    store: true 
+
+
+  # Authentication
+  authentication:
+    #Default to enable: false
+    enable: false  
+    username: test 
+    password: test1234
+

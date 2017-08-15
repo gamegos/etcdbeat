@@ -1,0 +1,153 @@
+- key: etcdbeat
+  title: etcdbeat
+  description:
+  fields:
+    - name: counter
+      type: long
+      required: true
+      description: >
+env:
+  type: group 
+  fields:
+    - name: "@timestamp"
+      type: date
+      required: true
+      format: YYYY-MM-DDTHH:MM:SS.milliZ
+      example: 2015-01-24T14:06:05.071Z
+      description: >
+        The timestamp of when the measurements were taken. The precision is in milliseconds.
+        The timezone is UTC.
+    - name: type
+      required: true
+    - name: counter
+      type: long
+      required: true
+      description: >
+
+leader:
+  type: group
+  description: >
+    Contains etcd leader statistics.
+
+  fields:
+    - name: followers
+      type: group
+      fields:
+        - name: counts
+          type: group
+          fields:
+            - name: fail
+              type: int
+            - name: success
+              type: int
+
+        - name: latency
+          type: group
+          fields:
+            - name: average
+              type: float64
+            - name: current
+              type: float64
+            - name: maximum
+              type: float64
+            - name: minimum
+              type: integer
+            - name: standardDeviation
+              type: float64
+    - name: leader 
+      type: string
+
+self:
+  type: group
+  description: >
+    Contains etcd self statistics.
+  fields:
+    - name: id
+      type: string
+
+    - name: leaderInfo
+      type: group
+      fields:
+        - name: leader
+          type: string
+
+        - name: startTime
+          type: string
+
+        - name: uptime
+          type: string
+    
+    - name: name
+      type: string
+          
+    - name: RecvAppendRequestCnt
+      type: int
+
+    - name: recvBandwidthRate
+      type: float64
+
+    - name: recvPkgRate
+      type: float64
+
+    - name: sendAppendRequestCnt
+      type: int
+
+    - name: startTime
+      type: string
+
+    - name: state 
+      type: string
+
+store:
+  type: group
+  description: >
+    Contains etcd store statistics.
+  fields:
+    - name: getsSuccess
+      type: int
+
+    - name: getsFail
+      type: int
+
+    - name: setsSuccess
+      type: int
+
+    - name: setsFail
+      type: int
+
+    - name: deleteSuccess
+      type: int
+
+    - name: deleteFail
+      type: int
+
+    - name: updateSuccess
+      type: int
+
+    - name: updateFail
+      type: int
+
+    - name: createSuccess
+      type: int
+
+    - name: createFail
+      type: int
+
+    - name: compareAndSwapSuccess
+      type: int
+
+    - name: compareAndSwapFail
+      type: int
+
+    - name: compareAndDeleteSuccess
+      type: int
+
+    - name: compareAndDeleteFail
+      type: int
+
+    - name: expireCount
+      type: int
+
+    - name: watchers
+      type: int
+
