@@ -132,7 +132,7 @@ curl -XPUT 'http://<host>:9200/_template/etcdbeat' -d@etcdbeat.template.json
 ## Getting Started with Etcdbeat
 
 Ensure that this folder is at the following location:  
-`${GOPATH}/github.com/berfinsari`
+`${GOPATH}/github.com/gamegos`
 
 
 ### Requirements
@@ -152,7 +152,7 @@ It will create a clean git history for each major step. Note that you can always
 To push Etcdbeat in the git repository, run the following commands:
 
 ```
-git remote set-url origin https://github.com/berfinsari/etcdbeat
+git remote set-url origin https://github.com/gamegos/etcdbeat
 git push origin master
 ```
 
@@ -227,9 +227,9 @@ make clean
 To clone Etcdbeat from the git repository, run the following commands:
 
 ```
-mkdir -p ${GOPATH}/github.com/berfinsari
-cd ${GOPATH}/github.com/berfinsari
-git clone https://github.com/berfinsari/etcdbeat
+mkdir -p ${GOPATH}/github.com/gamegos
+cd ${GOPATH}/github.com/gamegos
+git clone https://github.com/gamegos/etcdbeat
 ```
 
 
