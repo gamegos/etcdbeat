@@ -93,6 +93,8 @@ Document example:
 </pre>  
 
 ## Configuration  
+  
+Check out [this blog post](http://www.berfinsari.com/2017/08/etcdbeat-elastic-beat-for-etcd_7.html) for more details.
 
 Adjust the `etcdbeat.yml` configuration file to your needs.    
 
