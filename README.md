@@ -7,7 +7,11 @@ Etcdbeat is an [Elastic Beat](https://www.elastic.co/products/beats) that reads 
 > [Etcd](https://coreos.com/etcd) is an open-source distributed key value store that provides a reliable way to store data across a cluster of machines.  
 
 An etcd cluster keeps track of a number of statistics including latency, bandwidth and uptime. Etcdbeat collects this stats with etcd API.  
-
+  
+### Usage
+  
+Check out [this blog post](http://www.berfinsari.com/2017/08/etcdbeat-elastic-beat-for-etcd_7.html) on how it works.
+  
 ## Exported Fields
 
 There are three types of documents exported:
@@ -90,8 +94,6 @@ Document example:
 
 ## Configuration  
 
-Check out [this blog post](http://www.berfinsari.com/2017/08/etcdbeat-elastic-beat-for-etcd_7.html) on how it works.  
-  
 Adjust the `etcdbeat.yml` configuration file to your needs.    
 
 ### `period`  
