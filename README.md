@@ -89,7 +89,10 @@ Document example:
 </pre>  
 
 ## Configuration  
-Adjust the `etcdbeat.yml` configuration file to your needs.  
+
+Check out [this blog post](http://www.berfinsari.com/2017/08/etcdbeat-elastic-beat-for-etcd_7.html) on how it works.  
+  
+Adjust the `etcdbeat.yml` configuration file to your needs.    
 
 ### `period`  
 Defines how often to read statistics. Default to `30` s.	  
